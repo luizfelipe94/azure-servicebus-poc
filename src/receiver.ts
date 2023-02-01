@@ -1,6 +1,6 @@
 import * as asb from "@azure/service-bus";
 
-const connection = "Endpoint=sb://testpoc123321.servicebus.windows.net/;SharedAccessKeyName=poc;SharedAccessKey=Z7+mW9B76EG6sxxMhyZBG0wFCt5Ssv8Tr6auixYlGJc=;EntityPath=email-notifications";
+const connection = "";
 const serviceBus = new asb.ServiceBusClient(connection);
 const receiver = serviceBus.createReceiver("email-notifications");
 
